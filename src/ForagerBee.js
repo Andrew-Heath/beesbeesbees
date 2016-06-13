@@ -10,3 +10,6 @@ ForagerBee.prototype = Object.create(Bee.prototype);
 
 ForagerBee.prototype.constructor = ForagerBee;
 
+ForagerBee.prototype.forage = function(treasure) {
+  return this.treasureChest.push(treasure);
+};
